@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>VL.Stride.BezierPatch</id>
+    <version>0.0.1</version>
+    <title>VL.Stride.BezierPatch</title>
+    <authors>antokhio, mrvux</authors>
+    <owners>antokhio</owners>
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/antokhio/VL.Stride.BezierPatch</projectUrl>
+    <summary>Render Bezier surfaces in VL.Stride</summary>
+    <description>Set of nodes to create and render bezier surfaces in VL.Stride</description>
+    <copyright>Copyright © 2024 antokhio</copyright>
+    <tags>VL, vvvv, stride, 3d, bezier, bspline, nurbs, mesh</tags>
+  </metadata>
+   <files>
+    <file src="..\lib\Vl.Stride.BezierPatch.dll" target="lib\net8.0" />
+    <file src="..\*.vl"/>
+    <file src="..\help\*.vl" target="help"/>
+    <file src="..\README.md" />
+    <file src="..\LICENSE" />
+  </files>
+</package>
