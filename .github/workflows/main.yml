@@ -26,6 +26,4 @@ jobs:
       with:
         csproj: src\Vl.Stride.BezierPatch.csproj
         nuspec: deployment\VL.Stride.BezierPathc.nuspec
-        icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
-        icon-dst: ./deployment/nugeticon.png
         nuget-key: ${{ secrets.NUGET_KEY }}
