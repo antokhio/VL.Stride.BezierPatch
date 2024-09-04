@@ -15,19 +15,19 @@
         </p:NodeReference>
         <Patch Id="GjHXkvPRmTJMtF0hH3XlLn">
           <Canvas Id="F7fVNf2Kt0QMQxqt15oErc" CanvasType="Group">
-            <Node Bounds="296,152,89,86" Id="Swn7Ecjrb56NDjtz9HjZ2t">
+            <Node Bounds="222,123,186,202" Id="Swn7Ecjrb56NDjtz9HjZ2t">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Primitive" />
                 <Choice Kind="ProcessStatefulRegion" Name="Cache" />
               </p:NodeReference>
               <Pin Id="Q6Po492EkMtOgqpwboWJXx" Name="Force" Kind="InputPin" />
-              <Pin Id="NeBRYC5qYOFNAHbqfWOFth" Name="Dispose Cached Outputs" Kind="InputPin" />
+              <Pin Id="NeBRYC5qYOFNAHbqfWOFth" Name="Dispose Cached Outputs" Kind="InputPin" DefaultValue="True" />
               <Pin Id="A6A8yOSAUtxLVSP5qCyejb" Name="Has Changed" Kind="OutputPin" />
               <Patch Id="EznZTxkwA3XOTphFEZkO81" ManuallySortedPins="true">
                 <Patch Id="BUayWPSEVaIPGxU6dXWHLw" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="T8X81aEp2vbNvdl9ijfZ59" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="308,184,65,26" Id="JSR0OBXbStnL280MYL7F4V">
+                <Node Bounds="308,228,65,26" Id="JSR0OBXbStnL280MYL7F4V">
                   <p:NodeReference LastCategoryFullName="Vl.Stride.BezierPatch.BezierPatch" LastDependency="Vl.Stride.BezierPatch.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="Category" Name="Vl" />
@@ -44,61 +44,61 @@
                   <Pin Id="ToA9VsJbwCMQCOhfqpHG0u" Name="Grid Resolution" Kind="InputPin" />
                   <Pin Id="CP7vKOVMivmPPvU8qZMHyH" Name="Output" Kind="StateOutputPin" />
                 </Node>
+                <Node Bounds="234,275,68,26" Id="MkGw7CbR2b8ORxt0YHWDyw">
+                  <p:NodeReference LastCategoryFullName="BezierPatch" LastDependency="Vl.Stride.BezierPatch.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="BezierMesh" />
+                  </p:NodeReference>
+                  <Pin Id="AqT7rbail61OAtSHUc5dN0" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="FvqCmgTOEIBPdLfzd8LVJM" Name="Output" Kind="OutputPin" IsHidden="true" />
+                  <Pin Id="DR9e5b6sCddLkkzCtmpJhw" Name="Bezier Mesh" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="322,275,74,26" Id="FcQ62LSQAveLUjrOMRnWeQ">
+                  <p:NodeReference LastCategoryFullName="Vl.Stride.BezierPatch.BezierPatch" LastDependency="Vl.Stride.BezierPatch.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="Category" Name="BezierPatch" />
+                    <CategoryReference Kind="4026531840" Name="BezierPatch" NeedsToBeDirectParent="true">
+                      <p:OuterCategoryReference Kind="Category" Name="BezierPatch" NeedsToBeDirectParent="true" />
+                    </CategoryReference>
+                    <Choice Kind="OperationCallFlag" Name="HelperPoints" />
+                  </p:NodeReference>
+                  <Pin Id="Cjjx42S6PYvLOrTbFbeOIX" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Cb1W9O13oCPLPDI2Wtzg8Y" Name="Output" Kind="OutputPin" IsHidden="true" />
+                  <Pin Id="PrXb6a6ngjpLtJxiv39MkM" Name="Helper Points" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="243,146,42,19" Id="URdtyMUPFgqL3Gwd8Ft3Wo">
+                  <p:NodeReference LastCategoryFullName="Stride.Utils" LastDependency="VL.Stride.Games.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Game" />
+                    <CategoryReference Kind="Category" Name="Utils" NeedsToBeDirectParent="true">
+                      <p:OuterCategoryReference Kind="Category" Name="Stride" NeedsToBeDirectParent="true" />
+                    </CategoryReference>
+                  </p:NodeReference>
+                  <Pin Id="Kq00R4BJkPINlfSqc5I92W" Name="Output" Kind="OutputPin" />
+                  <Pin Id="KRehDwjiNboLep6gYqxKVP" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                </Node>
+                <Node Bounds="243,190,53,26" Id="Ek7vwzfIU2ULFSA9cLquxd">
+                  <p:NodeReference LastCategoryFullName="Stride.Games.GameBase" LastDependency="Stride.Games.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="GameBase" />
+                    <Choice Kind="OperationCallFlag" Name="Services" />
+                  </p:NodeReference>
+                  <Pin Id="PD70ycjzIS4Pdb2B6NE3NB" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="JoSB8gfxy8KMaIm9JlxUKF" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="QxluVMxakLOPB9UNfy2zcR" Name="Services" Kind="OutputPin" />
+                </Node>
               </Patch>
-              <ControlPoint Id="TyZmxRdoMagLS1DnTUP91V" Bounds="310,158" Alignment="Top" />
-              <ControlPoint Id="AyaVHDEQzDhP7ol9XuwhEe" Bounds="329,158" Alignment="Top" />
-              <ControlPoint Id="QaZLiZ0j8NqPAo37vU0Tfe" Bounds="350,158" Alignment="Top" />
-              <ControlPoint Id="SFPWgMTai1IK93hQKIxtAG" Bounds="370,158" Alignment="Top" />
-              <ControlPoint Id="Kbxn0V7RNY5LmFziAgKKn7" Bounds="311,232" Alignment="Bottom" />
+              <ControlPoint Id="AyaVHDEQzDhP7ol9XuwhEe" Bounds="329,129" Alignment="Top" />
+              <ControlPoint Id="QaZLiZ0j8NqPAo37vU0Tfe" Bounds="350,129" Alignment="Top" />
+              <ControlPoint Id="SFPWgMTai1IK93hQKIxtAG" Bounds="370,129" Alignment="Top" />
+              <ControlPoint Id="NILebtCOu87PGA29fD7ZyD" Bounds="236,319" Alignment="Bottom" />
+              <ControlPoint Id="UzOGeRDjW3fNfu6T40oFLt" Bounds="324,319" Alignment="Bottom" />
             </Node>
-            <Node Bounds="259,59,42,19" Id="URdtyMUPFgqL3Gwd8Ft3Wo">
-              <p:NodeReference LastCategoryFullName="Stride.Utils" LastDependency="VL.Stride.Games.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="Game" />
-                <CategoryReference Kind="Category" Name="Utils" NeedsToBeDirectParent="true">
-                  <p:OuterCategoryReference Kind="Category" Name="Stride" NeedsToBeDirectParent="true" />
-                </CategoryReference>
-              </p:NodeReference>
-              <Pin Id="Kq00R4BJkPINlfSqc5I92W" Name="Output" Kind="OutputPin" />
-              <Pin Id="KRehDwjiNboLep6gYqxKVP" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            </Node>
-            <Node Bounds="259,103,53,26" Id="Ek7vwzfIU2ULFSA9cLquxd">
-              <p:NodeReference LastCategoryFullName="Stride.Games.GameBase" LastDependency="Stride.Games.dll">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="GameBase" />
-                <Choice Kind="OperationCallFlag" Name="Services" />
-              </p:NodeReference>
-              <Pin Id="PD70ycjzIS4Pdb2B6NE3NB" Name="Input" Kind="StateInputPin" />
-              <Pin Id="JoSB8gfxy8KMaIm9JlxUKF" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="QxluVMxakLOPB9UNfy2zcR" Name="Services" Kind="OutputPin" />
-            </Node>
-            <ControlPoint Id="JGlSYr2OjRMQJatmBY5Ixw" Bounds="330,51" />
+            <ControlPoint Id="JGlSYr2OjRMQJatmBY5Ixw" Bounds="329,54" />
             <ControlPoint Id="RuduHztoVxmNPUwLjjSrGL" Bounds="350,78" />
-            <ControlPoint Id="RkOtwcrsZfOODD9F6iXr3a" Bounds="370,110" />
-            <Node Bounds="309,265,68,26" Id="MkGw7CbR2b8ORxt0YHWDyw">
-              <p:NodeReference LastCategoryFullName="BezierPatch" LastDependency="Vl.Stride.BezierPatch.dll">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="BezierMesh" />
-              </p:NodeReference>
-              <Pin Id="AqT7rbail61OAtSHUc5dN0" Name="Input" Kind="StateInputPin" />
-              <Pin Id="FvqCmgTOEIBPdLfzd8LVJM" Name="Output" Kind="OutputPin" IsHidden="true" />
-              <Pin Id="DR9e5b6sCddLkkzCtmpJhw" Name="Bezier Mesh" Kind="OutputPin" />
-            </Node>
-            <ControlPoint Id="ENqx6OjcWq5NrWTJ1Zpptl" Bounds="310,349" />
-            <Node Bounds="396,266,74,26" Id="FcQ62LSQAveLUjrOMRnWeQ">
-              <p:NodeReference LastCategoryFullName="Vl.Stride.BezierPatch.BezierPatch" LastDependency="Vl.Stride.BezierPatch.dll">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="Category" Name="BezierPatch" />
-                <CategoryReference Kind="4026531840" Name="BezierPatch" NeedsToBeDirectParent="true">
-                  <p:OuterCategoryReference Kind="Category" Name="BezierPatch" NeedsToBeDirectParent="true" />
-                </CategoryReference>
-                <Choice Kind="OperationCallFlag" Name="HelperPoints" />
-              </p:NodeReference>
-              <Pin Id="Cjjx42S6PYvLOrTbFbeOIX" Name="Input" Kind="StateInputPin" />
-              <Pin Id="Cb1W9O13oCPLPDI2Wtzg8Y" Name="Output" Kind="OutputPin" IsHidden="true" />
-              <Pin Id="PrXb6a6ngjpLtJxiv39MkM" Name="Helper Points" Kind="OutputPin" />
-            </Node>
-            <ControlPoint Id="RriS5h4KPTjLT7yi3FTKCn" Bounds="398,348" />
+            <ControlPoint Id="RkOtwcrsZfOODD9F6iXr3a" Bounds="370,100" />
+            <ControlPoint Id="ENqx6OjcWq5NrWTJ1Zpptl" Bounds="236,350" />
+            <ControlPoint Id="RriS5h4KPTjLT7yi3FTKCn" Bounds="324,351" />
           </Canvas>
           <Patch Id="BIrOBSx3V4LM6GlMmwARvE" Name="Create" />
           <Patch Id="FtPvLxxYhqiPvjkvLwTZ96" Name="Update">
@@ -119,9 +119,6 @@
             <Fragment Id="VRpQgp0z3DwOAEJrNm8tPt" Patch="BIrOBSx3V4LM6GlMmwARvE" Enabled="true" />
             <Fragment Id="Vnl4ifRpfJ7LlJvJTVWV3T" Patch="FtPvLxxYhqiPvjkvLwTZ96" Enabled="true" />
           </ProcessDefinition>
-          <Link Id="RGT642FLpq4N6moVydQSyd" Ids="TyZmxRdoMagLS1DnTUP91V,HfPqipFQjOnPOcSiZ9taFr" />
-          <Link Id="Ric0ytWhG1kNR8jFK5wRlv" Ids="Kq00R4BJkPINlfSqc5I92W,PD70ycjzIS4Pdb2B6NE3NB" />
-          <Link Id="Ozy8R17EmGSMgzdD7ZlmGs" Ids="QxluVMxakLOPB9UNfy2zcR,TyZmxRdoMagLS1DnTUP91V" />
           <Link Id="MagHNbv0cuFLql2Xch8WNW" Ids="AyaVHDEQzDhP7ol9XuwhEe,Jkh5qkbwwgUPrm02PLlwZP" />
           <Link Id="H41FUFTSJG1OYjHkiYBcCg" Ids="JGlSYr2OjRMQJatmBY5Ixw,AyaVHDEQzDhP7ol9XuwhEe" />
           <Link Id="OIE8OlHy2n4OiNadxPq1nH" Ids="C9TgAdkC0L2L7gghcgQXDd,JGlSYr2OjRMQJatmBY5Ixw" IsHidden="true" />
@@ -131,13 +128,16 @@
           <Link Id="Iw1prgfBsm3OvdHHsCbBZ6" Ids="SFPWgMTai1IK93hQKIxtAG,ToA9VsJbwCMQCOhfqpHG0u" />
           <Link Id="I26YvCGCWt3PgOmm5b8OCb" Ids="RkOtwcrsZfOODD9F6iXr3a,SFPWgMTai1IK93hQKIxtAG" />
           <Link Id="OBAhtXwTGccNy1IccxtCZT" Ids="RKF8LfPrDLSP1Bh0VxhHbF,RkOtwcrsZfOODD9F6iXr3a" IsHidden="true" />
-          <Link Id="B2rEiOinNSNMi7Gnh5SxTr" Ids="CP7vKOVMivmPPvU8qZMHyH,Kbxn0V7RNY5LmFziAgKKn7" />
-          <Link Id="Uz7LytPirN6PvRWDGEFnHe" Ids="Kbxn0V7RNY5LmFziAgKKn7,AqT7rbail61OAtSHUc5dN0" />
-          <Link Id="QWrkWNayENcLyJyFgAToAY" Ids="DR9e5b6sCddLkkzCtmpJhw,ENqx6OjcWq5NrWTJ1Zpptl" />
           <Link Id="JsHsJMVyau5QFM6Flx0jg2" Ids="ENqx6OjcWq5NrWTJ1Zpptl,Oaycu8byXgLMXsPq8mJrvh" IsHidden="true" />
-          <Link Id="Q2iNP00qtklQQiDBA2PHN0" Ids="Kbxn0V7RNY5LmFziAgKKn7,Cjjx42S6PYvLOrTbFbeOIX" />
-          <Link Id="BXsBgDENSITOzsspQqkTPJ" Ids="PrXb6a6ngjpLtJxiv39MkM,RriS5h4KPTjLT7yi3FTKCn" />
           <Link Id="Gsxugh0QNGEOjGDtn7yqtH" Ids="RriS5h4KPTjLT7yi3FTKCn,GzTLHLXVJzgNniEnDW2UOB" IsHidden="true" />
+          <Link Id="GBkY48rcgaxPC82VKgCgMu" Ids="CP7vKOVMivmPPvU8qZMHyH,AqT7rbail61OAtSHUc5dN0" />
+          <Link Id="SwhJ428ksNSQaR092ltOs2" Ids="DR9e5b6sCddLkkzCtmpJhw,NILebtCOu87PGA29fD7ZyD" />
+          <Link Id="BUwZdFA6BxZMY2WN0APw10" Ids="NILebtCOu87PGA29fD7ZyD,ENqx6OjcWq5NrWTJ1Zpptl" />
+          <Link Id="S47PzGEn2xCP0pIKnkS203" Ids="CP7vKOVMivmPPvU8qZMHyH,Cjjx42S6PYvLOrTbFbeOIX" />
+          <Link Id="JujBWepFMSNOLJqECDtPyE" Ids="PrXb6a6ngjpLtJxiv39MkM,UzOGeRDjW3fNfu6T40oFLt" />
+          <Link Id="VrL79kYEstOMj76wzYOPx1" Ids="UzOGeRDjW3fNfu6T40oFLt,RriS5h4KPTjLT7yi3FTKCn" />
+          <Link Id="Ric0ytWhG1kNR8jFK5wRlv" Ids="Kq00R4BJkPINlfSqc5I92W,PD70ycjzIS4Pdb2B6NE3NB" />
+          <Link Id="DpSosr5VSSiLEAQgdzSMuL" Ids="QxluVMxakLOPB9UNfy2zcR,HfPqipFQjOnPOcSiZ9taFr" />
         </Patch>
       </Node>
       <!--

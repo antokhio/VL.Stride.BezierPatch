@@ -1,5 +1,5 @@
 # VL.Stride.BezierPatch
-![splash](https://github.com/antokhio/VL.Stride.BezierPatch/blob/main/lib/assets/splash.jpg)
+![splash](https://github.com/antokhio/VL.Stride.BezierPatch/blob/main/help/assets/splash.jpg)
 
 Set of nodes to create bezier surfaces.
 

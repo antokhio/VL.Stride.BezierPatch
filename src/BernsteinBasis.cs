@@ -1,5 +1,5 @@
 ﻿/*
-Source: https://github.com/mrvux/FeralTic/blob/0ff90991f75b21894971cbf4216fa1540dc0ff5e/Core/Core/Maths/BernsteinBasis.cs
+Source: https://github.com/mrvux/FeralTic/blob/master/Core/Core/Maths/BernsteinBasis.cs
 
 License:
 

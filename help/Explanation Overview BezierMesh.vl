@@ -94,7 +94,7 @@
               <Choice Kind="ProcessAppFlag" Name="FileTexture" />
             </p:NodeReference>
             <Pin Id="U07dtOqscjYOs9pcIoqrcu" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="QH3lTNCP9hUM18h3eUWwWZ" Name="Path" Kind="InputPin" DefaultValue="..\lib\assets\pug.jpg" />
+            <Pin Id="QH3lTNCP9hUM18h3eUWwWZ" Name="Path" Kind="InputPin" DefaultValue="assets\pug.jpg" />
             <Pin Id="Ns7LMIoVO8uN8vywy5Zdbs" Name="Generate Mipmaps" Kind="InputPin" />
             <Pin Id="NpKT9XtcsPiMq0RaliiGLN" Name="Is sRGB" Kind="InputPin" IsHidden="true" />
             <Pin Id="BHPYMzQjPfDPt9pqy0KysD" Name="Premultiply Alpha" Kind="InputPin" />
