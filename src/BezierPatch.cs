@@ -40,15 +40,15 @@ namespace Vl.Stride.BezierPatch
         public Mesh BezierMesh { get; private set; }
         public Spread<Vector2> HelperPoints { get; private set; }
 
-        public BezierPatch(IServiceRegistry serviceRegistry, Spread<Vector2> controlPoints, Int2 controlPointsResolution, Int2 gridResolution)
+        public BezierPatch(IServiceRegistry serviceRegistry, Spread<Vector2> controlPoints, Int2 controlPointsResolution, Int2 gridResolution, bool isAbsolute = false)
         {
-            var bezierPatchGeometry = new BezierPatchGeometry(controlPointsResolution, gridResolution, controlPoints);
+            var bezierPatchGeometry = new BezierPatchGeometry(controlPointsResolution, gridResolution, controlPoints, isAbsolute);
 
             var model = new Model();
             bezierPatchGeometry.Generate(serviceRegistry, model);
 
             BezierMesh = model.Meshes[0];
-            HelperPoints = bezierPatchGeometry.HelperPoints.ToSpread();
+            HelperPoints = isAbsolute ? controlPoints : bezierPatchGeometry.HelperPoints.ToSpread();
         }
     }
 
@@ -57,14 +57,16 @@ namespace Vl.Stride.BezierPatch
         private Int2 _controlPointsResolution;
         private Int2 _gridResolution;
         private Spread<Vector2> _controlPoints;
+        private bool _isAbsolute;
 
         public List<Vector2> HelperPoints { get; private set; }
 
-        public BezierPatchGeometry(Int2 controlPointsResolution, Int2 gridResolution, Spread<Vector2> controlPoints) : base()
+        public BezierPatchGeometry(Int2 controlPointsResolution, Int2 gridResolution, Spread<Vector2> controlPoints, bool isAbsolute = false) : base()
         {
             _controlPointsResolution = controlPointsResolution;
             _gridResolution = gridResolution;
             _controlPoints = controlPoints;
+            _isAbsolute = isAbsolute;
         }
 
         protected override GeometricMeshData<VertexPositionNormalTexture> CreatePrimitiveMeshData()
@@ -143,10 +145,21 @@ namespace Vl.Stride.BezierPatch
                     float[] bu = BernsteinBasis.ComputeBasis(cresX - 1, tu);
                     float[] bv = BernsteinBasis.ComputeBasis(cresY - 1, tb);
 
-                    for (int ck = 0; ck < ctrls.Count; ck++)
+                    if (_isAbsolute)
                     {
-                        carr[ck].X = x + ctrls[ck].X;
-                        carr[ck].Y = y + ctrls[ck].Y;
+                        for (int ck = 0; ck < ctrls.Count; ck++)
+                        {
+                            carr[ck].X = ctrls[ck].X;
+                            carr[ck].Y = ctrls[ck].Y;
+                        }
+                    }
+                    else
+                    {
+                        for (int ck = 0; ck < ctrls.Count; ck++)
+                        {
+                            carr[ck].X = x + ctrls[ck].X;
+                            carr[ck].Y = y + ctrls[ck].Y;
+                        }
                     }
 
                     Vector3 vp = EvaluateBezier(carr, bu, bv, cresX, cresY);

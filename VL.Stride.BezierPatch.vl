@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="FNhMQSEDa5jNFnQFC4iQMP" LanguageVersion="2024.6.7-0127-g8093c79f80" Version="0.128">
-  <NugetDependency Id="CVy4QhcG3UfMCvNS7UKUbE" Location="VL.CoreLib" Version="2024.6.7-0127-g8093c79f80" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="FNhMQSEDa5jNFnQFC4iQMP" LanguageVersion="2025.7.0-0407-g8675153500" Version="0.128">
+  <NugetDependency Id="CVy4QhcG3UfMCvNS7UKUbE" Location="VL.CoreLib" Version="2025.7.0-0407-g8675153500" />
   <Patch Id="ITI3wTE0bZMLn0JDzvCCXX">
     <Canvas Id="As5UCg6ZtykL3BtXPGmyhA" DefaultCategory="VL.Stride.BezierPatch" CanvasType="FullCategory">
       <!--
@@ -27,7 +27,7 @@
               <Patch Id="EznZTxkwA3XOTphFEZkO81" ManuallySortedPins="true">
                 <Patch Id="BUayWPSEVaIPGxU6dXWHLw" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="T8X81aEp2vbNvdl9ijfZ59" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="308,228,65,26" Id="JSR0OBXbStnL280MYL7F4V">
+                <Node Bounds="308,228,85,26" Id="JSR0OBXbStnL280MYL7F4V">
                   <p:NodeReference LastCategoryFullName="Vl.Stride.BezierPatch.BezierPatch" LastDependency="Vl.Stride.BezierPatch.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="Category" Name="Vl" />
@@ -43,6 +43,7 @@
                   <Pin Id="FTnvVUsmyj7QMUwXej5rWa" Name="Control Points Resolution" Kind="InputPin" />
                   <Pin Id="ToA9VsJbwCMQCOhfqpHG0u" Name="Grid Resolution" Kind="InputPin" />
                   <Pin Id="CP7vKOVMivmPPvU8qZMHyH" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="Ax513jvrpl8OVJpS0dWiIG" Name="Is Absolute" Kind="InputPin" />
                 </Node>
                 <Node Bounds="234,275,68,26" Id="MkGw7CbR2b8ORxt0YHWDyw">
                   <p:NodeReference LastCategoryFullName="BezierPatch" LastDependency="Vl.Stride.BezierPatch.dll">
@@ -93,12 +94,14 @@
               <ControlPoint Id="SFPWgMTai1IK93hQKIxtAG" Bounds="370,129" Alignment="Top" />
               <ControlPoint Id="NILebtCOu87PGA29fD7ZyD" Bounds="236,319" Alignment="Bottom" />
               <ControlPoint Id="UzOGeRDjW3fNfu6T40oFLt" Bounds="324,319" Alignment="Bottom" />
+              <ControlPoint Id="HY47ccS0rEqLG5cJiP1uoW" Bounds="390,129" Alignment="Top" />
             </Node>
-            <ControlPoint Id="JGlSYr2OjRMQJatmBY5Ixw" Bounds="329,54" />
-            <ControlPoint Id="RuduHztoVxmNPUwLjjSrGL" Bounds="350,78" />
-            <ControlPoint Id="RkOtwcrsZfOODD9F6iXr3a" Bounds="370,100" />
+            <ControlPoint Id="JGlSYr2OjRMQJatmBY5Ixw" Bounds="329,31" />
+            <ControlPoint Id="RuduHztoVxmNPUwLjjSrGL" Bounds="350,51" />
+            <ControlPoint Id="RkOtwcrsZfOODD9F6iXr3a" Bounds="370,71" />
             <ControlPoint Id="ENqx6OjcWq5NrWTJ1Zpptl" Bounds="236,350" />
             <ControlPoint Id="RriS5h4KPTjLT7yi3FTKCn" Bounds="324,351" />
+            <ControlPoint Id="Jfm3xN6ACGEMft6YpClVRw" Bounds="390,101" />
           </Canvas>
           <Patch Id="BIrOBSx3V4LM6GlMmwARvE" Name="Create" />
           <Patch Id="FtPvLxxYhqiPvjkvLwTZ96" Name="Update">
@@ -114,6 +117,7 @@
             <Pin Id="RKF8LfPrDLSP1Bh0VxhHbF" Name="Grid Resolution" Kind="InputPin" DefaultValue="2, 2" />
             <Pin Id="Oaycu8byXgLMXsPq8mJrvh" Name="Mesh" Kind="OutputPin" />
             <Pin Id="GzTLHLXVJzgNniEnDW2UOB" Name="Helper Points" Kind="OutputPin" />
+            <Pin Id="ESCeLlJaZMXMaApACYRt6B" Name="Is Absolute" Kind="InputPin" />
           </Patch>
           <ProcessDefinition Id="PEa0w3FguEpPROD18CWDX4">
             <Fragment Id="VRpQgp0z3DwOAEJrNm8tPt" Patch="BIrOBSx3V4LM6GlMmwARvE" Enabled="true" />
@@ -138,6 +142,9 @@
           <Link Id="VrL79kYEstOMj76wzYOPx1" Ids="UzOGeRDjW3fNfu6T40oFLt,RriS5h4KPTjLT7yi3FTKCn" />
           <Link Id="Ric0ytWhG1kNR8jFK5wRlv" Ids="Kq00R4BJkPINlfSqc5I92W,PD70ycjzIS4Pdb2B6NE3NB" />
           <Link Id="DpSosr5VSSiLEAQgdzSMuL" Ids="QxluVMxakLOPB9UNfy2zcR,HfPqipFQjOnPOcSiZ9taFr" />
+          <Link Id="RmJxsMUgoq4LkJFPlEwTin" Ids="HY47ccS0rEqLG5cJiP1uoW,Ax513jvrpl8OVJpS0dWiIG" />
+          <Link Id="QslL4nYVK4XPeEyWVBgWQt" Ids="Jfm3xN6ACGEMft6YpClVRw,HY47ccS0rEqLG5cJiP1uoW" />
+          <Link Id="M4cmA3gQLvfQHqYtny66GT" Ids="ESCeLlJaZMXMaApACYRt6B,Jfm3xN6ACGEMft6YpClVRw" IsHidden="true" />
         </Patch>
       </Node>
       <!--
@@ -286,8 +293,8 @@
     </Node>
   </Patch>
   <PlatformDependency Id="OqaNTrW4FoHPEWGt2bfg1C" Location="./lib/Vl.Stride.BezierPatch.dll" />
-  <NugetDependency Id="VyBHuSNL1A9MrzDkwqEtCi" Location="VL.Stride" Version="2024.6.7-0127-g8093c79f80" />
-  <NugetDependency Id="Cb3lQc9RmmyNSKD1FJKBJy" Location="VL.Stride.HDE" Version="2024.6.7-0127-g8093c79f80" />
+  <NugetDependency Id="VyBHuSNL1A9MrzDkwqEtCi" Location="VL.Stride" Version="2025.7.0-0407-g8675153500" />
+  <NugetDependency Id="Cb3lQc9RmmyNSKD1FJKBJy" Location="VL.Stride.HDE" Version="2025.7.0-0407-g8675153500" />
   <PlatformDependency Id="J8Nw5dGsMe2Ot0xfjW6vGu" Location="Stride.Rendering.dll" />
   <PlatformDependency Id="TRLc5qHDOLIN1jISRlUVef" Location="Stride.Games.dll" />
 </Document>
